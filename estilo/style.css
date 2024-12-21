@@ -1,0 +1,225 @@
+@charset "UTF-8"
+
+/* 
+#04BFBF
+#BF048D
+#F2CB05
+#F2A007
+#F27405
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kaushan+Script&family=Montserrat:wght@600&family=Playwrite+VN+Guides&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'RoleModel' ;
+    src: url('../Fontes/RoleModel-PersonalUse-Oblique.otf'); format ('opentype')
+    font-weight:normal ;
+}
+
+:root {
+    --cor-0: #7df7f77e;
+    --cor0: #04BFBF;
+    --cor1: #BF048D;
+    --cor2: #F2CB05;
+    --cor3: #F2A007;
+    --cor4: #F27405;
+
+    --fonte-padrão: Arial, verdana, helvetica, sans-serif;
+    --font-destaque: "Kaushan Script", serif;
+    --font-RoleModel:'RoleModel';
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor-0);
+    font-family: var(--fonte-padrão);
+    
+}
+a.externo::after {
+    content: '\00A0🔗';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor0));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    min-width: 300px;
+    max-width:1040px ;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+header > h1{
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.406);
+    font-weight: normal;
+    
+    
+}
+header > p{
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-padrão);
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.406);
+}
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.39);
+
+}
+nav > a {
+    color:var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: var(--cor0);
+}
+main {
+    
+    min-width: 300px;
+    max-width:1000px ;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.405);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+
+main h1{
+    color: var(--cor1);
+    font-family: var(--font-RoleModel);
+    font-weight:normal ;
+    font-size: 1.8em;
+
+}
+
+main h2{
+    font-family: var(--font-RoleModel);
+    color: var(--cor2);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+main h3 {
+    font-family: var(--font-RoleModel);
+}
+
+ 
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+    
+}
+main strong{
+    font-weight: bold;
+    padding: 2px 6px;
+    
+}
+main a{
+   text-decoration: none; 
+   font-weight: bold;
+   color: var(--cor4);
+   background-color:   var(--cor0);
+   padding: 2px 6px ;
+   background-image: linear-gradient(to right, var(--cor1),transparent);
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+main img {
+    width:30%;
+    display: block;
+    margin: auto;
+    max-height: px;
+    padding: 10px;
+    
+}
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+aside{
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.478);
+    
+}
+aside > h3{
+    background-color: var(--cor1);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+
+}
+aside > ul {
+    list-style-type: '🗸\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside.um {
+    background-color:rgba(186, 181, 181, 0.625);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.478);
+}
+
+aside h4 {
+    background-color: var(--cor2);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+    font-family: var(--font-RoleModel);
+    font-size: 1.2em;
+}
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 20px;
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
